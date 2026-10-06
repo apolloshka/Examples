@@ -1,9 +1,14 @@
 package inheritance;
 
 public class Cat extends Pet {
-    public String breed;
+    private String breed;
 
-    public void meow(){
-        System.out.println("Мяу!");
+    public Cat(String name, int age, String breed){
+        super(name, age);
+        this.breed = breed;
+        setSound("Мяу");
+    }
+    public String meow(){
+        return getSound();
     }
 }

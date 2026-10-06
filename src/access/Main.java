@@ -6,6 +6,7 @@ public class Main {
 
         cat.setName("Барсик");
         cat.setName("Рыжик");
+        cat.setAge(2); //передали аргумент
 
         cat.color = "Рыжий";
         cat.breed = "Британец";
@@ -14,5 +15,7 @@ public class Main {
         System.out.println("Цвет: " + cat.color);
         System.out.println("Порода: " + cat.breed);
         System.out.println("Прозвище: " + cat.nickname);
-        System.out.println("Имя: " + cat.getName());    }
+        System.out.println("Имя: " + cat.getName());
+        System.out.println("Возраст: " + cat.getAge());
+    }
 }
