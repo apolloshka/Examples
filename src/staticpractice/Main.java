@@ -1,23 +1,27 @@
 package staticpractice;
 
+import static staticpractice.Dog.Statistics.compareDogs;
+import static staticpractice.Dog.Statistics.printNumOfDogs;
+
+
 public class Main {
-    public static void main(String[] args){
-        Dog dog1 = new Dog();
-        Dog dog2 = new Dog();
+    public static void main(String[] args) {
 
-        dog1.name ="Барсик";
-        dog2.name ="Шарик";
+//        Dog.Statistics statistics = new Dog.Statistics();  методы статические, объект не нужен
 
-        Dog.shelterName = "Приют2";
-//        Dog.isStreet = true; //по дефолту false, даже если не задано значение в static
+        Dog.setShelterName("Приют2");
 
-        if (Dog.isStreet == true){
-            System.out.println(dog1.name + " из приюта " + Dog.shelterName + " и он дворовый пес");
-            System.out.println(dog2.name + " из приюта " + Dog.shelterName + " и он дворовый пес");
-        }
-        else{
-            System.out.println(dog1.name + " из приюта " + Dog.shelterName + " и он не дворовый пес");
-            System.out.println(dog2.name + " из приюта " + Dog.shelterName + " и он не дворовый пес");
-        }
+        Dog dog1 = new Dog("Барсик", 2);
+        dog1.getInfo();
+
+        Dog dog2 = new Dog("Шарик", 5);
+        dog2.getInfo();
+
+
+        compareDogs(dog1, dog2);
+        printNumOfDogs();
+
+        Dog.setDescription("Все питомцы в приюте");
+        Dog.getDescription();
     }
 }
