@@ -9,10 +9,10 @@ public class Main {
 
         Scanner scanner = new Scanner(System.in);
 
-//        System.out.println("Что говорит собака?");
-//        String dogSound = scanner.nextLine();
-//        dog.setSound(dogSound);
-//        System.out.println(dog.bark());
+        System.out.println("Что говорит собака?");
+        String dogSound = scanner.nextLine();
+        dog.setSound(dogSound);
+        System.out.println(dog.getSound());
 //
 //        System.out.println("Что говорит кошка?");
 //        String catSound = scanner.nextLine();
@@ -26,13 +26,13 @@ public class Main {
         int choice = scanner.nextInt();
         scanner.nextLine();
 
-        if (choice == 1){
-            System.out.println(cat.meow());
-        } else if (choice ==2){
+        if (choice == 1) {
+            System.out.println(cat.getSound());
+        } else if (choice == 2) {
             System.out.println("Введите новый звук:");
             String newSound = scanner.nextLine();
             cat.setSound(newSound);
-            System.out.println("Кошка говорит" + cat.meow());
+            System.out.println("Кошка говорит" + cat.getSound());
         } else {
             System.out.println("UNKNOWN");
         }
