@@ -12,6 +12,8 @@ public class Main {
         cat.breed = "Британец";
         cat.nickname = "Рыж";
 
+        Cat cat6 = new Cat();
+
         System.out.println("Цвет: " + cat.color);
         System.out.println("Порода: " + cat.breed);
         System.out.println("Прозвище: " + cat.nickname);

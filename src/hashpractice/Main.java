@@ -9,6 +9,7 @@ public class Main {
 
         Cat anotherCat = cat;
         System.out.println(anotherCat == cat); //проверка того, один ли это объект выполняет "=="
+        System.out.println(anotherCat.hashCode());
 
         Cat secondCat = new Cat("Барсик");
         System.out.println(secondCat.hashCode()); //может быть одинаков как для ссылки на предыдущую кошку - коллизия, так проверять некорректно

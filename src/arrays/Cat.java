@@ -1,11 +1,18 @@
 package arrays;
 
-public class Cat {
-    public String name;
-    public int age;
+public class Cat extends Pet {
     public String breed;
+
+    Cat(String name) {
+        this(name, 0);
+    }
+
+    Cat(int age) {
+        this(" ", age);
+    }
+
+    Cat(String name, int age) {
+        super(name, age);
+    }
 }
 
-//public class Cat extends Pet {
-//  public String breed;
-//}
