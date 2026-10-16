@@ -10,6 +10,7 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Что говорит собака?");
+
         String dogSound = scanner.nextLine();
         dog.setSound(dogSound);
         System.out.println(dog.getSound());

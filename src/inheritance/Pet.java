@@ -9,6 +9,14 @@ public class Pet {
         this.name = name;
         this.age = age;
     }
+//
+//    public String newA(String name, int age){
+//        return "1";
+//    }
+//
+//    public int newA(int age, String name){
+//        return 1;
+//    }
 
     protected void setSound(String sound) {
         this.sound = sound;

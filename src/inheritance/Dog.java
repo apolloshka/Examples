@@ -21,6 +21,7 @@ public class Dog extends Pet {
         setSound("Гав");
     }
 
+
     public double getWeight() {
         return this.weight;
     }
